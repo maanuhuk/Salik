@@ -4,8 +4,8 @@ import logging
 from aiogram import Bot
 import asyncio
 
-API_TOKEN = '7245349199:AAFBz4ZKFAGqjtjpw-ebnhdi0q3HWMLZ2NM'
-ADMIN_ID = '5632276252'
+API_TOKEN = '7020091102:AAFTmn-m5xgES76-vgz4xKMpP-Uwk7fBJFU'
+ADMIN_ID = '1812281161'
 MAX_RESTARTS = 5
 RESTART_PERIOD = 60  # Seconds
 
@@ -14,7 +14,7 @@ bot = Bot(API_TOKEN)
 
 def start_bot():
     """Start the bot script as a subprocess."""
-    return subprocess.Popen(['python', 'm.py'])
+    return subprocess.Popen(['python3', 'm.py'])
 
 async def notify_admin(message):
     """Send a notification message to the admin via Telegram."""
@@ -57,4 +57,4 @@ if __name__ == '__main__':
     try:
         asyncio.run(main())
     except KeyboardInterrupt:
-        logging.info("Venom script terminated by user.")
+        logging.info("Bot Script terminated by Spike.")
